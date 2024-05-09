@@ -15,7 +15,7 @@ class HomePageDesktop extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Pallette.copperRust,
         leading: SvgPicture.asset(
-          "hamburger.svg",
+          "assets/hamburger.svg",
           fit: BoxFit.none,
         ),
         foregroundColor: Colors.white,
@@ -45,7 +45,7 @@ class HomePageDesktop extends StatelessWidget {
                       const Spacer(flex: 1),
                       Expanded(
                         flex: 3,
-                        child: Image.asset("headphone-bg.png"),
+                        child: Image.asset("assets/headphone-bg.png"),
                       )
                     ])),
             const SizedBox(height: 200),
