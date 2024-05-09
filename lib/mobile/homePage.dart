@@ -16,7 +16,7 @@ class HomePageMobile extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Pallette.darkCharcoal,
         leading: SvgPicture.asset(
-          "hamburger.svg",
+          "assets/hamburger.svg",
           fit: BoxFit.none,
         ),
         foregroundColor: Colors.white,
@@ -40,7 +40,7 @@ class HomePageMobile extends StatelessWidget {
                 decoration: const BoxDecoration(
                     color: Pallette.darkCharcoal,
                     image: DecorationImage(
-                        image: AssetImage(("headphone-bg.png")),
+                        image: AssetImage(("assets/headphone-bg.png")),
                         opacity: 0.7,
                         fit: BoxFit.fill)),
                 child: NewProductColumn()),
