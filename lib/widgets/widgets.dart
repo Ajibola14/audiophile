@@ -1,3 +1,4 @@
+import 'package:audiophile/responsive.dart';
 import 'package:flutter/material.dart';
 
 import '../color.dart';
@@ -15,7 +16,9 @@ class SectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-      width: MediaQuery.of(context).size.width * 0.27,
+      width: Responsive.isMobile(context)
+          ? MediaQuery.of(context).size.width * 0.4
+          : MediaQuery.of(context).size.width * 0.27,
       margin: EdgeInsets.only(bottom: 150),
       decoration: BoxDecoration(
           color: Pallette.fadedBlack, borderRadius: BorderRadius.circular(5)),
